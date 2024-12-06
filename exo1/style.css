@@ -1,0 +1,38 @@
+/* Styles généraux pour un thème sombre */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+}
+
+/* Style pour les h3 avec glassmorphism */
+h3 {
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    background: rgba(50, 50, 50, 0.4);
+    color: #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    max-width: 600px;
+    word-wrap: break-word;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Animation hover */
+h3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
